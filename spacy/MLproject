@@ -5,3 +5,7 @@ conda_env: conda.yaml
 entry_points:
   main:
     command: "python train.py"
+  inference_pipeline_model:
+    parameters:
+      trained_model_run_id: { type: str, default: None }
+    command: "python inference.py --trained_model_run_id {trained_model_run_id}"

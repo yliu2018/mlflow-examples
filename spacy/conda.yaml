@@ -7,3 +7,4 @@ dependencies:
   - pip:
     - mlflow
     - spacy==3.4.1
+    - gcld3==3.0.13
